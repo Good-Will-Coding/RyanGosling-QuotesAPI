@@ -1,3 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f1f2f6;
+    font-family: 'Oswald', sans-serif;
+}
+
 h1 {
-    color: blue;
+    color: #ff4757;
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+h5 {
+    font-size: 2rem;
+}
+.container {
+    text-align: center;
+}
+
+
+
+pre {
+    background: #f7f7f7;
 }
