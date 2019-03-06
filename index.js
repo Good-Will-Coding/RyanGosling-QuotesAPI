@@ -1,7 +1,9 @@
 const express = require("express");
+const app = express();
+
 const quotesLimitGenerator = require("./quotesLimitGenerator");
 
-const app = express();
+
 
 app.use(express.static(__dirname + "/public"));
 
@@ -11,7 +13,7 @@ app.all("*", (req, res, next) => {
 });
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname + "index.html"));
+  res.sendFile(path.join(__dirname + "/index.html"));
 });
 
 app.get("/api/quotes", (req, res) => {
