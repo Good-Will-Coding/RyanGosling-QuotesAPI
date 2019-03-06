@@ -17,7 +17,7 @@ app.get("/api/quotes/random", (req, res) => {
 });
 
 app.get("/api/quotes/:num?", (req, res) => {
-  res.send();
+  res.send(quotesLimitGenerator.getQuotesByNumber(req.params.num || 1));
 });
 
 const PORT = process.env.PORT || 9000;
