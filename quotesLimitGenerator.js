@@ -2,9 +2,11 @@
 
 const quotes = require("./quotes");
 
+const getAllQuotes = () => quotes;
 
- const getRandomQuote = () => quotes;
+const getRandomQuote = () => quotes[Math.floor(Math.random() * quotes.length)];
 
-    module.exports = {
-    getRandomQuote
+module.exports = {
+  getAllQuotes,
+  getRandomQuote
 };
