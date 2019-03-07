@@ -1,33 +1,57 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Ryan Gosling Quotes API</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/style.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Ryan Gosling Quotes API</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
-  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-</head>
-
-<body>
-  <header>
-    <h1>Ryan Gosling Quotes API</h1>
-  </header>
-  <div class="container">
-      <img id="quoteicon" src="https://i.ibb.co/ZS1S7f4/quote.png" alt="quoteicon">
-    <div class="container-leadingdetails">
-      <h5>Hey, girl. So I heard you need an API for all your Ryan Gosling quotes. <br /> Well, you came to the right place. If you need a Gosling quote, we've got a quote.</h5>
-    </div>
-    <div class="container-maindetails">
-
-      <p id="container-maindetails_p-size">How to use our API</p>
-      <div class="container-maindetails-example">
-        <span><p>To retrieve all Ryan Gosling quotes, send a GET request to the following:</p></span>
-        <pre>https://ryangosling-quotes.herokuapp.com/api/quotes</pre><br />
-        <div class="example-grid">
-        <span class="example-response-title">Example response for quotes request</span>
-        <pre class="example"><code>
+  <body>
+    <header>
+      <h1>Ryan Gosling <span>Quotes API</span></h1>
+    </header>
+    <div class="container">
+      <img
+        id="quoteicon"
+        src="https://i.ibb.co/ZS1S7f4/quote.png"
+        alt="quoteicon"
+      />
+      <div class="container-leadingdetails">
+        <h5>
+          Hey, girl. So I heard you need an API for all your Ryan Gosling
+          quotes. <br />
+          Well, you came to the right place. If you need a Gosling quote, we've
+          got a quote.
+        </h5>
+      </div>
+      <div class="container-maindetails">
+        <p id="container-maindetails_p-size">How to use our API</p>
+        <!-- Example 1  -->
+        <div class="container-maindetails-example">
+          <span
+            ><p>
+              To retrieve all Ryan Gosling quotes, send a GET request to the
+              following:
+            </p></span
+          >
+          <pre>https://ryangosling-quotes.herokuapp.com/api/quotes</pre>
+          <br />
+          <div class="example-grid">
+            <span class="example-response-title"
+              >Example response for quotes request</span
+            >
+            <pre class="example"><code>
  [ 
     { 
       "quote": "I don't have wheels on my car.", 
@@ -37,14 +61,22 @@
  
 </code></pre>
           </div>
-      </div>
-      <!--           Example 2 -->
-      <div class="container-maindetails-example">
-        <span><p>To retrieve a random quote, send a GET request to the following:</p></span>
-        <pre>https://ryangosling-quotes.herokuapp.com/api/quotes/random</pre><br />
-        <div class="example-grid">
-        <span class="example-response-title">Example response for random quote</span>
-        <pre class="example"><code>
+        </div>
+
+        <!-- Example 2 -->
+        <div class="container-maindetails-example">
+          <span
+            ><p>
+              To retrieve a random quote, send a GET request to the following:
+            </p></span
+          >
+          <pre>https://ryangosling-quotes.herokuapp.com/api/quotes/random</pre>
+          <br />
+          <div class="example-grid">
+            <span class="example-response-title"
+              >Example response for random quote</span
+            >
+            <pre class="example"><code>
 [
     {
 
@@ -55,14 +87,27 @@
  
 </code></pre>
           </div>
-      </div>
-      <div class="container-maindetails-example">
-        <span><p>For a certain amount of quotes, <br /> send a GET request and change the number parameter to the desired amount of quotes you wish to receive back:</p></span>
-        <pre>https://ryangosling-quotes.herokuapp.com/api/quotes/{number}</pre><br/>
-        <p>Example Request</p><pre>https://ryangosling-quotes.herokuapp.com/api/quotes/2</pre>
-        <div class="example-grid">
-        <span class="example-response-title">Example response for numbered request</span>
-        <pre class="example"><code>
+        </div>
+        <!-- Example 3  -->
+        <div class="container-maindetails-example">
+          <span
+            ><p>
+              For a certain amount of quotes, <br />
+              send a GET request and change the number parameter to the desired
+              amount of quotes you wish to receive back:
+            </p></span
+          >
+          <pre>
+https://ryangosling-quotes.herokuapp.com/api/quotes/{number}</pre
+          >
+          <br />
+          <p>Example Request</p>
+          <pre>https://ryangosling-quotes.herokuapp.com/api/quotes/2</pre>
+          <div class="example-grid">
+            <span class="example-response-title"
+              >Example response for numbered request</span
+            >
+            <pre class="example"><code>
 [
   {
     "quote": "Hey, you want a toothpick?",
@@ -76,14 +121,31 @@
  
 </code></pre>
           </div>
+        </div>
       </div>
     </div>
-
-  </div>
-  <footer>
-    <span>API created by <a href="#">Billy Phillips</a></span>
-    <div id="flaticon">Icons made by <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons">Flat Icons</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-  </footer>
-</body>
-
+    <footer>
+      <span
+        >API created by
+        <a href="https://billyphillips.netlify.com/">Billy Phillips</a></span
+      >
+      <div id="flaticon">
+        Icons made by
+        <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons"
+          >Flat Icons</a
+        >
+        from
+        <a href="https://www.flaticon.com/" title="Flaticon"
+          >www.flaticon.com</a
+        >
+        is licensed by
+        <a
+          href="http://creativecommons.org/licenses/by/3.0/"
+          title="Creative Commons BY 3.0"
+          target="_blank"
+          >CC 3.0 BY</a
+        >
+      </div>
+    </footer>
+  </body>
 </html>

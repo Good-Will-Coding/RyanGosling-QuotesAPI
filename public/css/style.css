@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #ff4757;
-  --secondary-color: #f7f7f7;
+  --primary-color: #2c2c54;
+  --secondary-color: #f1f2f6;
 }
 
 * {
@@ -19,9 +19,16 @@ h1 {
   font-size: 5rem;
   text-align: center;
   margin-top: 4rem;
+  text-shadow: 2px 2px#c8d6e5;
+
 }
 
+/* h1 span {
+    color: #fc5c65;
+} */
+
 h5 {
+    color: #222f3e;
   font-size: 1.5rem;
   padding: auto 5rem;
 }
@@ -38,6 +45,8 @@ h5 {
   margin-top: 8%;
 }
 
+/* Main details  */
+
 #container-maindetails_p-size {
   font-size: 3rem;
   margin-bottom: 2rem;
@@ -49,6 +58,8 @@ pre {
   margin-top: 0.5rem;
   margin-bottom: 1.5rem;
 }
+
+/* Examples  */
 
 .container-maindetails-example {
   margin-bottom: 6%;
@@ -77,19 +88,13 @@ pre {
     grid-template-columns: 4fr 2fr 1fr;
     margin-top: 2rem;
   }
-  
-  /* @media only screen and (max-width: 768px) {
-      .example-grid {
-       grid-template-columns: 8fr 1fr 2fr;
-          
-        }
-    } */
+ 
+/* Footer  */
 
 footer {
   background: var(--primary-color);
   text-align: center;
   padding: 1rem;
-  border-top: 1px solid black;
   border-bottom: 2px;
 }
 
